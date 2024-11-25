@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/css/style.css ***!
   \***************************************************************************************************************/
@@ -414,9 +419,9 @@ body{
   color: rgb(121 128 138 / var(--tw-text-opacity));
 }
 
-header {
+/* header {
   background-color: #fff;
-}
+} */
 
 h1,  h2,  h3,  h4,  h5,  h6{
   font-family: Outfit, sans-serif;

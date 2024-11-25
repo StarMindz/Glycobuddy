@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glycobuddy</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
   <body
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
@@ -151,35 +153,50 @@
         <div class="bb ze ki yn 2xl:ud-px-12.5">
           <div class="tc uf zo xf ap zf bp mq">
             <!-- Small Features Item -->
-            <div class="animate_top kn to/3 tc cg oq">
-              <div class="tc wf xf cf ae cd rg mh">
-                <img src="images/icon-01.svg" alt="Icon" />
+            <div class="animate_top flex flex-col to/3">
+              <div class="flex flex-row gap-[20px]">
+                <div class="tc wf xf cf ae cd rg mh">
+                  <img src="images/icon-01.svg" alt="Icon" />
+                </div>
+                <div>
+                  <h4 class="ek yj go kk wm xb">Scan Your Meal</h4>
+                  <p>Snap a photo or log your meal to instantly analyze its nutrients, calories, and more.</p>
+                </div>
               </div>
-              <div>
-                <h4 class="ek yj go kk wm xb">Scan Your Meal</h4>
-                <p>Snap a photo or log your meal to instantly analyze its nutrients, calories, and more.</p>
-              </div>
-            </div>
-
-            <!-- Small Features Item -->
-            <div class="animate_top kn to/3 tc cg oq">
-              <div class="tc wf xf cf ae cd rg nh">
-                <img src="images/icon-02.svg" alt="Icon" />
-              </div>
-              <div>
-                <h4 class="ek yj go kk wm xb">Get Insights</h4>
-                <p>Receive tailored guidance on what’s safe to eat and how it aligns with your health goals.</p>
+              <div class="m-auto w-[100%] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
+                <video src="./images/glycobuddy4.mp4" muted autoplay="true"></video>
               </div>
             </div>
 
             <!-- Small Features Item -->
-            <div class="animate_top kn to/3 tc cg oq">
-              <div class="tc wf xf cf ae cd rg oh">
-                <img src="images/icon-03.svg" alt="Icon" />
+            <div class="flex flex-col to/3">
+              <div class="flex flex-row gap-[20px]">
+                <div class="tc wf xf cf ae cd rg nh">
+                  <img src="images/icon-02.svg" alt="Icon" />
+                </div>
+                <div>
+                  <h4 class="ek yj go kk wm xb">Get Insights</h4>
+                  <p>Receive tailored guidance on what’s safe to eat and how it aligns with your health goals.</p>
+                </div>
               </div>
-              <div>
-                <h4 class="ek yj go kk wm xb">Plan & Track</h4>
-                <p>Use our meal planner and progress tracker to stay on top of your health.</p>
+              <div class="m-auto w-[100%] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
+                <video src="./images/glycobuddy2.mp4" muted autoplay="true"></video>
+              </div>
+            </div>
+
+            <!-- Small Features Item -->
+            <div class="flex flex-col to/3" >
+              <div class="flex flex-row gap-[20px]">
+                <div class="tc wf xf cf ae cd rg oh">
+                  <img src="images/icon-03.svg" alt="Icon" />
+                </div>
+                <div>
+                  <h4 class="ek yj go kk wm xb">Plan & Track</h4>
+                  <p>Use our meal planner and progress tracker to stay on top of your health.</p>
+                </div>
+              </div>
+              <div class="m-auto w-[100%] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
+                <video src="./images/glycobuddy5.mp4" muted autoplay="true"></video>
               </div>
             </div>
           </div>
