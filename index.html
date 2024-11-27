@@ -59,8 +59,8 @@
         <ul class="tc _o sf yo cg ep">
           <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
           <li><a href="index.html#features" class="xl">Features</a></li>
-          <li class="c i" x-data="{ dropdown: false }">
-            <a
+          <!-- <li class="c i" x-data="{ dropdown: false }"> -->
+            <!-- <a
               href="#"
               class="xl tc wf yf bg"
               @click.prevent="dropdown = !dropdown"
@@ -73,18 +73,18 @@
               class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
               </svg>
-            </a>
+            </a> -->
 
             <!-- Dropdown Start -->
-            <ul class="a" :class="{ 'tc': dropdown }">
+            <!-- <ul class="a" :class="{ 'tc': dropdown }">
               <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
               <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
               <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
               <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
               <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
-            </ul>
+            </ul> -->
             <!-- Dropdown End -->
-          </li>
+          <!-- </li> -->
           <li><a href="index.html#support" class="xl">Support</a></li>
         </ul>
       </nav>
@@ -102,8 +102,8 @@
           </label>
         </div>
 
-        <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
-        <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
+        <!-- <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a> -->
+        <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' }" class="lk gh dk rg tc wf xf _l gi hi">Get Early Access</a>
       </div>
     </div>
   </div>
@@ -134,7 +134,7 @@
 
               <div class="tc tf yo zf mb">
                 <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l"
-                  >Get Started Now</a
+                  >Join the Waitlist</a
                 >
 
                 <span class="tc sf">
@@ -163,13 +163,13 @@
                   <p>Snap a photo or log your meal to instantly analyze its nutrients, calories, and more.</p>
                 </div>
               </div>
-              <div class="m-auto w-[100%] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
-                <video src="./images/glycobuddy4.mp4" muted autoplay="true"></video>
+              <div class="m-auto w-[90%] max-w-[300px] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
+                <video src="./images/glycobuddy4.mp4" muted autoplay="true" loop></video>
               </div>
             </div>
 
             <!-- Small Features Item -->
-            <div class="flex flex-col to/3">
+            <div class="animate_top flex flex-col to/3">
               <div class="flex flex-row gap-[20px]">
                 <div class="tc wf xf cf ae cd rg nh">
                   <img src="images/icon-02.svg" alt="Icon" />
@@ -179,13 +179,13 @@
                   <p>Receive tailored guidance on what’s safe to eat and how it aligns with your health goals.</p>
                 </div>
               </div>
-              <div class="m-auto w-[100%] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
-                <video src="./images/glycobuddy2.mp4" muted autoplay="true"></video>
+              <div class="m-auto w-[90%] max-w-[300px] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
+                <video src="./images/glycobuddy2.mp4" muted autoplay="true" loop></video>
               </div>
             </div>
 
             <!-- Small Features Item -->
-            <div class="flex flex-col to/3" >
+            <div class="animate_top flex flex-col to/3" >
               <div class="flex flex-row gap-[20px]">
                 <div class="tc wf xf cf ae cd rg oh">
                   <img src="images/icon-03.svg" alt="Icon" />
@@ -195,8 +195,8 @@
                   <p>Use our meal planner and progress tracker to stay on top of your health.</p>
                 </div>
               </div>
-              <div class="m-auto w-[100%] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
-                <video src="./images/glycobuddy5.mp4" muted autoplay="true"></video>
+              <div class="m-auto w-[90%] max-w-[300px] md:w-[80%] flex mt-10 p-1 md:p-5 border border-b-slate-100 rounded-3xl">
+                <video src="./images/glycobuddy5.mp4" muted autoplay="true" loop></video>
               </div>
             </div>
           </div>
@@ -212,8 +212,8 @@
             <div class="animate_left xc gn gg jn/2 i">
               <div>
                 <img src="images/shape-05.svg" alt="Shape" class="h -ud-left-5 x" />
-                <img src="images/about-01.png" alt="About" class="ib" />
-                <img src="images/about-02.png" alt="About" />
+                <img style="width: 300px; border-radius: 10px;" src="images/woman-drink-wine.jpg" alt="About" class="ib" />
+                <img style="width: 300px; border-radius: 10px;" src="images/woman-gym.jpg" alt="About" />
               </div>
               <div>
                 <img src="images/shape-06.svg" alt="Shape" />
@@ -226,31 +226,96 @@
             <div class="animate_right jn/2">
               <h4 class="ek yj mk gb">Built for You, Backed by AI</h4>
               <h2 class="fk vj zp pr kk wm qb">Your Health, Simplified. Your Confidence, Restored.</h2>
-              <p class="uo">Glycobuddy isn’t just an app. It is your trusted companion for managing diabetes with ease and precision. We’re here to simplify your journey and empower you with tools that make a real difference.</p>
+              <p class="uo">Glycobuddy isn’t just an app. It is your trusted companion for managing diabetes, staying fit, or simply eating smarter. With tailored insights and support for local Nigerian dishes, makes eating healthy, simple and stress-free</p>
+              <ul class="flex flex-col mt-5 list-disc list-inside">
+                <li>Regulate your blood sugar</li>
+                <li>Stay fit</li>
+                <li>Eat healthy</li>
+              </ul>
+              <p class="uo mt-5">With Glycobuddy, you can confidently navigate your meals, knowing you have AI-powered support tailored to your specific health needs.</p>
 
-              <a href="" id="videoTrigger" data-fslightbox class="vc wf hg mb">
+              <!-- <a href="" id="videoTrigger" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                   <img src="images/icon-play.svg" alt="Play" />
                 </span>
                 <span class="kk">SEE HOW IT WORKS</span>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
       </section>
       <!-- ===== About End ===== -->
 
-      <!-- Modal -->
-      <div id="videoModal" class="modal">
-        <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="videoContainer">
-          HI
-          <!-- Videos will be dynamically loaded here -->
+      <!-- ===== About Start ===== -->
+      <section class="ji gp uq 2xl:ud-py-35 pg">
+        <div class="bb ze ki xn wq">
+          <div class="tc wf gg qq">
+
+            <!-- About Content -->
+            <div class="animate_right jn/2 -mt-30">
+              <h4 class="ek yj mk gb">Your favorite local meals, now tailored for better health.</h4>
+              <h2 class="fk vj zp pr kk wm qb">Scan your favourite Nigerian Dishes</h2>
+              <p class="uo mt-5">Glycobuddy tailors its advice based on your health goals, dietary preferences, and even your past meal history. So, you can enjoy that bowl of okra soup with peace of mind, knowing exactly how it impacts your health.</p>
+
+              <!-- <a href="" id="videoTrigger" data-fslightbox class="vc wf hg mb">
+                <span class="tc wf xf be dd rg i gh ua">
+                  <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                  <img src="images/icon-play.svg" alt="Play" />
+                </span>
+                <span class="kk">SEE HOW IT WORKS</span>
+              </a> -->
+            </div>
+
+            <!-- About Images -->
+            <div class="animate_left xc gn gg jn/2 i">
+              <div>
+          
+                <img style="width: 300px; border-radius: 10px;" src="images/Okra_soup.jpg" alt="About" class="ib" />
+              </div>
+              <div>
+                <img src="images/shape-07.svg" alt="Shape" />
+                <img style="width: 300px; border-radius: 10px;" src="images/Bitterleaf_Soup.jpg" alt="About" class="ob gb" />
+                <img src="images/shape-06.svg" alt="Shape" class="bb" />
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <!-- ===== About End ===== -->
+
+
+      <!-- ===== Counter Start ===== -->
+      <section class="i pg qh rm ji hp">
+        <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
+        <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
+        <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
+        <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+
+        <div class="bb ze i va ki xn br">
+          <div class="tc uf sn tn xf un gg">
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">1000+</h2>
+              <p class="ek bk aq">Happy Users</p>
+            </div>
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">100+</h2>
+              <p class="ek bk aq">Diabetic-Friendly Recipes</p>
+            </div>
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">15+</h2>
+              <p class="ek bk aq">Health Experts on Board</p>
+            </div>
+            <div class="animate_top me/5 ln rj">
+              <h2 class="gk vj zp or kk wm hc">346</h2>
+              <p class="ek bk aq">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Counter End ===== -->
+
 
       <!-- ===== Team Start ===== -->
       <section class="i pg ji gp uq">
@@ -786,35 +851,6 @@
       </section>
       <!-- ===== Testimonials End ===== -->
 
-      <!-- ===== Counter Start ===== -->
-      <section class="i pg qh rm ji hp">
-        <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
-        <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
-        <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
-        <img src="images/shape-15.svg" alt="Shape" class="h q p" />
-
-        <div class="bb ze i va ki xn br">
-          <div class="tc uf sn tn xf un gg">
-            <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">785</h2>
-              <p class="ek bk aq">Global Brands</p>
-            </div>
-            <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">533</h2>
-              <p class="ek bk aq">Happy Clients</p>
-            </div>
-            <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">865</h2>
-              <p class="ek bk aq">Winning Award</p>
-            </div>
-            <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">346</h2>
-              <p class="ek bk aq">Happy Clients</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Counter End ===== -->
 
       <!-- ===== Clients Start ===== -->
       <section class="pj vp mr">
@@ -870,7 +906,7 @@
       <section class="ji gp uq">
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `Stay Informed with Our Latest Articles.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
