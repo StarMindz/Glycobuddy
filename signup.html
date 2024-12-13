@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up | Base - Tailwind CSS Startup Template</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+  <link rel="icon" href="/Glycobuddy/favicon_icon.png"><link href="style.css" rel="stylesheet"></head>
   <body
     x-data="{ page: 'signup', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
@@ -129,8 +129,8 @@
             <h2 class="ek ck kk wm xb">Secure Your Spot</h2>
             <p>Be the First to Experience Glycobuddy</p>
 
-            <h3 class="hk yj kk wm ob mc">Sign up with Social Media</h3>
-            <ul class="tc wf xf mg ec">
+            <h3 class="hk yj kk wm ob mc">Sign up with Email</h3>
+            <!-- <ul class="tc wf xf mg ec">
               <li>
                 <a
                   class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40"
@@ -202,19 +202,20 @@
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> -->
 
-            <span class="i rc sj hk xj">
+            <!-- <span class="i rc sj hk xj">
               <span class="rc h s z/2 nd oe rh tm"></span>
               <span class="rc h q z/2 nd oe rh tm"></span>
 
               Or, sign up with your email
-            </span>
+            </span> -->
           </div>
 
           <form class="sb" action="https://formbold.com/s/unique_form_id" method="POST">
+            <!-- Name Field -->
             <div class="wb">
-              <label class="rc kk wm vb" for="fullname">Full name</label>
+              <label class="rc kk wm vb" for="fullname">Name</label>
               <input
                 type="text"
                 name="fullname"
@@ -223,7 +224,8 @@
                 class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
               />
             </div>
-
+          
+            <!-- Email Field -->
             <div class="wb">
               <label class="rc kk wm vb" for="email">Email</label>
               <input
@@ -234,26 +236,60 @@
                 class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
               />
             </div>
-
+          
+            <!-- Health Goals Field -->
             <div class="wb">
-              <label class="rc kk wm vb" for="password">Password</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="**************"
-                class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40"
-              />
+              <label class="rc kk wm vb" for="health_goals">Health goals with Glycobuddy?</label>
+              <select name="health_goals" id="health_goals" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40">
+                <option value="weight_loss">To keep fit</option>
+                <option value="muscle_gain">Muscle gain</option>
+                <option value="disease_management">Disease management</option>
+                <option value="general_health">General health & wellness</option>
+              </select>
             </div>
-
+          
+            <!-- Health Condition (Conditional) -->
+            <div class="wb" id="health_condition">
+              <label class="rc kk wm vb" for="health_condition_input">Health condition (if any)</label>
+              <select name="health_condition" id="health_condition_input" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40">
+                <option value="type_1">Type 1 Diabetes</option>
+                <option value="type_2">Type 2 Diabetes</option>
+                <option value="gestational">Gestational Diabetes</option>
+                <option value="pre_diabetes">Pre-diabetes</option>
+                <option value="other_condition">Other (Specify)</option>
+                <option value="no_condition">None</option>
+              </select>
+            </div>
+          
+            <!-- Device Compatibility -->
+            <div class="wb">
+              <label class="rc kk wm vb" for="device_compatibility">What device are you testing Glycobuddy with?</label>
+              <select name="device_compatibility" id="device_compatibility" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40">
+                <option value="ios">iOS (iPhone/iPad)</option>
+                <option value="android">Android</option>
+              </select>
+            </div>
+          
+            <!-- Meal Tracking Method -->
+            <div class="wb">
+              <label class="rc kk wm vb" for="meal_tracking">How do you track your meals currently?</label>
+              <select name="meal_tracking" id="meal_tracking" class="vd hh rg zk _g ch hm dm fm pl/50 xi mi sm xm pm dn/40">
+                <option value="app_tracking">App</option>
+                <option value="manual_tracking">Manual (e.g., diary)</option>
+                <option value="prescribed_plan">Prescribed plan</option>
+                <option value="no_tracking">I don't track my meals</option>
+              </select>
+            </div>
+          
+            <!-- Submit Button -->
             <button class="vd rj ek rc rg gh lk ml il _l gi hi">
-              Sign Up
+              Unlock Early Access!
             </button>
-
-            <p class="sj hk xj rj ob">
+          
+            <!-- <p class="sj hk xj rj ob">
               Already have an account?
               <a class="mk" href="signin.html"> Sign In </a>
-            </p>
+            </p> -->
           </form>
         </div>
       </section>
@@ -455,4 +491,66 @@
 
     <!-- ====== Back To Top End ===== -->
   <script defer src="bundle.js"></script></body>
+  <script>
+    // Wait for the DOM to fully load before running the script
+    document.addEventListener('DOMContentLoaded', function () {
+  
+      // Select the health condition select element and the health condition input field
+      const healthConditionSelect = document.getElementById('health_condition_input');
+      const healthConditionOtherInput = document.createElement('input');
+      healthConditionOtherInput.setAttribute('type', 'text');
+      healthConditionOtherInput.setAttribute('name', 'other_health_condition');
+      healthConditionOtherInput.setAttribute('id', 'other_health_condition');
+      healthConditionOtherInput.setAttribute('placeholder', 'Please specify your health condition');
+      healthConditionOtherInput.classList.add('vd', 'hh', 'rg', '_g', 'ch', 'hm', 'dm', 'fm', 'pl/50', 'xi', 'mi', 'sm', 'xm', 'pm', 'dn/40');
+  
+      // Hide the input initially
+      healthConditionOtherInput.style.display = 'none';
+      healthConditionOtherInput.style.marginTop = '20px';
+  
+      // Insert the input field after the health condition select element
+      healthConditionSelect.parentNode.appendChild(healthConditionOtherInput);
+  
+      // Add an event listener to the health condition select element to show/hide the "Other (Specify)" input
+      healthConditionSelect.addEventListener('change', function () {
+        if (this.value === 'other_condition') {
+          healthConditionOtherInput.style.display = 'block'; // Show the input
+        } else {
+          healthConditionOtherInput.style.display = 'none'; // Hide the input
+        }
+      });
+  
+    });
+    // Form submission function
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Collect form data
+      const formData = new FormData(form);
+      
+      // Check if the 'Other' health condition input exists and add it to the form data if filled
+      if (healthConditionOtherInput.style.display === 'block' && healthConditionOtherInput.value.trim() !== '') {
+        formData.append('other_health_condition', healthConditionOtherInput.value);
+      }
+
+      // Prepare the POST request
+      const apiUrl = 'YOUR_API_ENDPOINT_HERE';  // Replace with your API endpoint URL
+      fetch(apiUrl, {
+        method: 'POST',
+        body: formData,
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Your information has been submitted successfully!');
+          form.reset();  // Reset the form after successful submission
+        } else {
+          alert('There was an error submitting your form. Please try again.');
+        }
+      })
+      .catch(error => {
+        alert('An error occurred: ' + error);
+      });
+    });
+  </script>
+  
 </html>
